@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gsap ScrollTrigger Animation</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              raleway: ["Raleway", "sans"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <section id="intro" class="bg-[#E9E9E9] relative pt-2">
+    <header
+      class="flex justify-between w-[95%] mx-auto items-center px-4 font-raleway font-semibold py-2 text-2xl border-2 border-black rounded-full">
+      <div class="logo text-3xl">Logo</div>
+      <nav class="flex gap-16 items-center">
+        <ul class="flex gap-5">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Servicess</li>
+          <li>Projects</li>
+          <li>Blog</li>
+        </ul>
+      </nav>
+      <button class="px-4 py-2 bg-black text-white rounded-full text-lg">
+        Contact us
+      </button>
+    </header>
+    <div class="grid grid-cols-2">
+      <div class="w-full h-full p-10 flex flex-col justify-between">
+        <div
+          class="font-bold text-[8vw] leading-[100%] uppercase flex flex-wrap overflow-hidden"
+          id="title-container"></div>
+        <div class="pb-20 pl-[20%]">
+          <p
+            class="font-raleway 2xl:text-xl text-sm font-medium stagger-content">
+            In a world filled with endless possibilities, we believe in the
+            power of transformation and innovation. At our core, we are driven
+            to be the architects of positive change, to mold and create a better
+            future.
+          </p>
+          <div class="py-2">
+            <button
+              class="p-2 px-6 rounded-full border-[2px] border-black stagger-content">
+              View Video
+            </button>
+            <button
+              class="p-2 px-6 rounded-full border-[2px] border-black bg-black text-white stagger-content">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <svg
+          width="3102"
+          height="3059"
+          viewBox="0 0 3102 3059"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-full h-full cubeBoxSvg">
+          <path
+            class="cubeBoxPath"
+            d="M1860 0H1240L1241.5 610H622V1225.5H0V1844H622V2454.5H1241.5V3059H1860V2454.5H2494.5V1844L3102 1834.5V1214.5H2482V610H1860V0Z"
+            fill="url(#paint0_linear_1416_20)" />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1416_20"
+              x1="437.5"
+              y1="634"
+              x2="3102.5"
+              y2="2325"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0.0541431" />
+              <stop offset="0.427153" stop-color="#000" />
+              <stop offset="0.89885" stop-color="#000" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="secondIntro" class="bg-[#000]">
+    <div class="grid grid-cols-2">
+      <div class="pattern-intro">
+        <svg
+          width="1520"
+          height="1416"
+          viewBox="0 0 1520 1416"
+          fill="none"
+          class="w-full h-full"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            class="patternSecond"
+            d="M0 235V0H305V230.5H612V472H911.5V234.5H1215.5V476H911.5V713.5H608L607.5 940H911.5V1172.5H1216.5V943.5H1520V1180.5H1216.5V1416H911.5V1184H607.5V1416H304V1178H607.5V944.5H303V707.5H608V472H303V235H0Z"
+            fill="#E9E9E9" />
+        </svg>
+      </div>
+      <div class="w-full h-full p-10 flex flex-col justify-between">
+        <div
+          class="font-bold text-[6vw] leading-[100%] uppercase flex flex-wrap text-white">
+          Strive to become what you truly love to be.
+        </div>
+        <div class="pb-20 pl-[20%]">
+          <p class="font-raleway 2xl:text-xl text-sm font-medium text-white">
+            Cultivate your passion, pursue your dreams, and become the person
+            you've always loved being. Embrace your true self and journey
+            towards your aspirations with unwavering dedication.
+          </p>
+          <div class="py-2">
+            <button
+              class="p-2 px-6 rounded-full border-[2px] border-white text-white">
+              View Video
+            </button>
+            <button
+              class="p-2 px-6 rounded-full border-[2px] border-black bg-white text-black">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="thirdIntro" class="bg-[#E9E9E9] h-screen w-full relative">
+    <svg
+      width="2588"
+      height="2358"
+      viewBox="0 0 2588 2358"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-full h-full">
+      <path
+        class="patternThird"
+        d="M1035 0V469H1548V936H1035V1405H519V1883.5H0V2357.5H519V1890.5H1035V1414H1555.5V941H2070.5V478H2587.5V0H2070.5V469H1555.5V0H1035Z"
+        fill="#000" />
+    </svg>
+
+    <div
+      class="text-black absolute top-0 h-full left-0 w-full text-8xl p-10 flex flex-col justify-between">
+      <h1
+        class="font-ralewayy font-bold mix-blend-difference text-white leading-[120%]">
+        Learn more about <br />
+        Morhping & <br />Scrolling Animation
+      </h1>
+      <div class="ml-auto">
+        <a
+          href="https://www.youtube.com/naymurweb"
+          class="before:content-['Subscribe'] hover:before:content-['Youtube']"></a>
+      </div>
+    </div>
+  </footer>
+
+  <svg
+    width="2548"
+    height="2546"
+    viewBox="0 0 2548 2546"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M1021 0V500H1537V1009H1021L1028.5 1505H513V2029H0V2546H513V2036H1028.5V1524.5H1537V1017H2028V514H2547.5V0H2028V496H1524V0H1021Z"
+      fill="#D9D9D9" />
+  </svg>
+
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/polymorph-js/dist/polymorph.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
