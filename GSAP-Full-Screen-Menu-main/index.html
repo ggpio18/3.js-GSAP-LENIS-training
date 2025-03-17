@@ -1,0 +1,68 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  </head>
+  <body>
+    <!-- menu -->
+
+    <div class="menu-container">
+      <div class="logo">
+        <h1>
+          GGPIO18 <br />
+          PIO-Org
+        </h1>
+      </div>
+      <div class="menu-close-section">
+        <div class="inner-menu-close">
+          <span>
+            <h1 onclick="menuclose()">CLOSE</h1>
+          </span>
+          <div class="circle-hover">
+            <div class="inner-circle-hover"></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-items-section">
+        <div class="menu-about-section menu-item-section">
+          <div class="inner-menu-item">
+            <h1>ABOUT</h1>
+            <div class="circle-hover">
+              <div class="inner-circle-hover"></div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-blogs-section menu-item-section">
+          <div class="inner-menu-item">
+            <h1>BLOGS</h1>
+            <div class="circle-hover">
+              <div class="inner-circle-hover"></div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-contact-section menu-item-section">
+          <div class="inner-menu-item">
+            <h1>CONTACT US</h1>
+            <div class="circle-hover">
+              <div class="inner-circle-hover"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main section  -->
+    <div class="section">
+      <header>
+        <h1 onclick="menuopen()">Menu</h1>
+      </header>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
