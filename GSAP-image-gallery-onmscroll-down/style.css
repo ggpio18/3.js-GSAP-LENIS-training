@@ -1,0 +1,94 @@
+html, body {
+  width: 100%;
+  overscroll-behavior: none;
+  min-height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-size: 14rem;
+  font-family: "Bebas Neue";
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin: 0;
+  color: white;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.gallery {
+  height: 200vh;
+}
+
+.img {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background-size: cover;
+  z-index: -1;
+}
+.img:nth-of-type(1) {
+  background-image: url("https://placehold.co/600x400");
+}
+.img:nth-of-type(2) {
+  background-image: url("https://placehold.co/600x400");
+}
+.img:nth-of-type(3) {
+  background-image: url("https://placehold.co/600x400");
+}
+.img:nth-of-type(4) {
+  background-image: url("https://placehold.co/600x400");
+}
+.img:nth-of-type(5) {
+  background-image: url("https://placehold.co/600x400");
+}
+.img:nth-of-type(6) {
+  background-image: url("https://placehold.co/600x400");
+}
+.img:nth-of-type(7) {
+  background-image: url("https://placehold.co/600x400");
+}
+.img:nth-of-type(8) {
+  background-image: url("https://placehold.co/600x400");
+}
+.img:nth-of-type(9) {
+  background-image: url("https://placehold.co/600x400");
+}
+.img:before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  border-right: 1px solid black;
+}
+
+.line {
+  border-right: 1px solid black;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
